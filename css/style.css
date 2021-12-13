@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: inherit;
+    height: 15vh;
+    background-image: url(../imagens/trianguloCimaAtu.png);
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+main{
+    width: inherit;
+    height: 70vh;
+    background-color: lawngreen;
+}
+
+footer{
+    width: inherit;
+    height: 14vh;
+    background-image: url(../imagens/trianguloBaixoAtu.png);
+    background-repeat: no-repeat;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container principal */
+
+
+#containerPrincipal{
+
+    width: 50vw;
+    height: 70vh;
+    background-color: cadetblue;
+   
+}
