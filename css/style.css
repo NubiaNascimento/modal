@@ -40,5 +40,39 @@ main{
     width: 50vw;
     height: 70vh;
     background-color: cadetblue;
+     
+}
+
+.centralizar{
+    display: flex;
+}
+.fotoAluno{
+    width: 12vw;
+    height: 30vh;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #fff7e8;
+   
+}
+
+.inputsFotos{
+    width: 15vw;
+    height: 20vh;
+    background-color: yellow;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#tamanhoTirarFotos{
+    width: inherit;
+    height: 5vh;
+    background-color: lawngreen;
+}
+
+input[type=file]{
+    width: 150px;
+    height: 75px;
+    color:transparent;
    
 }
