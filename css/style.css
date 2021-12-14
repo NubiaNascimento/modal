@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,300;1,400&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -6,30 +10,44 @@
 
 header{
     width: inherit;
-    height: 15vh;
-    background-image: url(../imagens/trianguloCimaAtu.png);
+    height: 7.5vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(../imagens/triCimaModalCurva.png);
     background-repeat: no-repeat;
-    margin-bottom: 10px;
-}
-
-main{
-    width: inherit;
-    height: 70vh;
-    background-color: lawngreen;
 }
 
 footer{
     width: inherit;
-    height: 14vh;
-    background-image: url(../imagens/trianguloBaixoAtu.png);
+    height: 7vh;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url(../imagens/triBaixoModalCurva.png);
     background-repeat: no-repeat;
+    margin-right: 5px;
 }
 
 main{
+
     background-color: white;
+    width: inherit;
+    height: 55vh;
+    padding: 2% 15%;
+    display: grid;
+    grid-template-areas:
+    "foto teste"
+    "input input"
+    "botao botao";
+    grid-column-gap: 5%;
+   
+}
+
+body{
+    background-color: #a8a7a5;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 150px;
 }
 
 /* container principal */
@@ -38,71 +56,93 @@ main{
 #containerPrincipal{
 
     width: 45vw;
-    height: 60vh;
+    height: 69vh;
     background-color: #f5f5f5;
     border-radius: 10px;
-    box-shadow: 0 0 1em #babab8;
+    box-shadow: 0 0 1em #4a4a4a;
      
 }
 
-#arrumar{
-    margin-top: 40px;
-}
-
-.centralizar{
-    display: flex;
-}
 .fotoAluno{
     width: 12vw;
-    height: 30vh;
-    margin-left: 150px;
-    margin-top: 20px;
+    height: 25vh;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 1em #e0e0de;
     background-image: url(../imagens/botao-adicionar.png);
     background-repeat: no-repeat;
     background-position: center;
-   
+   grid-area: foto;
 }
 
 .inputsFotos{
-    width: 15vw;
-    height: 20vh;
-    margin-left: 80px;
-    margin-top: 20px;
-}
-
-#tamanhoTirarFotos{
-    width: inherit;
-    height: 5vh;
-
-}
-
-input[type=file]{
-    width: 150px;
-    height: 75px;
-    color:transparent;
+    width: 5vw;
+    height: 10vh;
    
+}
+
+.teste{
+    width: 15vw;
+    height: 4vh;
+    grid-area: teste;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#tirarFoto{
+
+    border: none;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    
+}
+
+
+.teste img {
+    height: 20px;
+}
+
+label, #inputCarregar{
+    
+    width: inherit;
+    height: inherit;
+    background-color:  #e8e8e8;
+    display: block;
+    border-radius: 5px;
+    padding: 4%;
+}
+
+#inputCarregar{
+    background-color: lightcoral;
+    display: none;
+}
+
+input[type='file']{
+     display: none;
 }
 .nome{
     width: 30vw;
     height: 3vh;
     background-color: #e8e8e8;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 8px;
     border: none;
     border-radius: 5px;
     padding-left: 15px;
     outline: none;
     font-weight: bold;
+    grid-area: input;
+
 }
 
 .botoes{
     width: 25vw;
     height: 10vh;
-    margin-left: 200px;
+    margin-left: 20px;
     margin-top: 20px;
+    grid-area: botao;
 }
 
 .submit{
@@ -116,3 +156,12 @@ input[type=file]{
     background-color: #FF3434;
     font-weight: bold;
 }
+
+#carregar{
+
+    margin-left: 50px;
+    vertical-align: super;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
